@@ -2,6 +2,28 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <PackOnBuild>true</PackOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>At.AzFunctions.HealthChecks</PackageId>
+    <PackageVersion>0.1.0</PackageVersion>
+
+    <PackageLicenseUrl>https://github.com/ahmadtantowi/At.AzFunctions.HealthChecks/blob/main/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ahmadtantowi/At.AzFunctions.HealthChecks</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ahmadtantowi/At.AzFunctions.HealthChecks</RepositoryUrl>
+    <PackageReleaseNotes>https://github.com/ahmadtantowi/At.AzFunctions.HealthChecks/releases</PackageReleaseNotes>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageTags>azure-functions, health-check</PackageTags>
+
+    <Title>Azure Functions Health Check</Title>
+    <Summary>Azure Function Health is small library based on the aspnetcore HealthChecks feature</Summary>
+    <Description>Azure Function Health is small library based on the aspnetcore HealthChecks feature</Description>
+
+    <Owners>ahmadtantowi</Owners>
+    <Authors>Ahmad Tantowi</Authors>
+    <Copyright>Copyright 2021</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
