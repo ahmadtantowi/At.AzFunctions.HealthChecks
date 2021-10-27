@@ -2,6 +2,8 @@
 
 Azure Function Health is small library based on the aspnetcore HealthChecks feature. The traditional health checks registered in an aspnetcore API included the HealthCheckPublisherHostedService as a HostedService which is not possible or desired to run in an Azure Function. However there are benefits to included a health check in an Azure Function to test the depencies of your service. This library will allow you to register health checks for your dependencies and create an HTTP endpoint that can be used to monitor the health of your application.
 
+[![NuGet](https://img.shields.io/nuget/v/At.AzFunctions.HealthChecks.svg?label=NuGet)](https://www.nuget.org/packages/At.AzFunctions.HealthChecks)
+
 ## Health Checks
 
 There are a number of health checks that you can add to your Function App that have already been implemented. You can add any of the healthcheck defined here: https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks
