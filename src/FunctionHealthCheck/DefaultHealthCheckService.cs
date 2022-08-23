@@ -75,7 +75,8 @@ namespace FunctionHealthCheck
                             description: result.Description,
                             duration: duration,
                             exception: result.Exception,
-                            data: result.Data);
+                            data: result.Data,
+                            tags: registration.Tags);
 
                         Log.HealthCheckEnd(_logger, registration, entry, duration);
                         Log.HealthCheckData(_logger, registration, entry);
@@ -90,7 +91,8 @@ namespace FunctionHealthCheck
                             description: ex.Message,
                             duration: duration,
                             exception: ex,
-                            data: null);
+                            data: null,
+                            tags: registration.Tags);
 
                         Log.HealthCheckError(_logger, registration, ex, duration);
                     }
