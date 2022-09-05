@@ -26,7 +26,7 @@ namespace Function.HealthCheck.SQL
 
             services.AddFunctionHealthChecks()
                 .AddSqlServer(
-                  connectionString: "Server=localhost;Database=yourdb;User Id=app;Password=test123");
+                  connectionString: "Server=localhost;Database=yourdb;User Id=app;Password=test123", tags: new[] { "SQLServer"});
 
         }
     }
